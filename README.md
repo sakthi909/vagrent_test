@@ -1,14 +1,14 @@
 # Github runner on Vagrent
-### Requirments
+## Requirments
 1. vagrent should be installed in the host
 2. Internet connection should be avilable to the host
 
-### Steps
+## Steps
 1. Download the git code
 2. vagrent up
 3. vagrent ssh ( this will allow the user to ssh to vagrent )
 
-#### Downloading Vagrent
+### Below commands to enter in Vagrent 
   mkdir actions-runner && cd actions-runner
 #### Download the latest runner package
  curl -o actions-runner-linux-x64-2.291.1.tar.gz -L https://github.com/actions/runner/releases/download/v2.291.1/actions-runner-linux-x64-2.291.1.tar.gz
