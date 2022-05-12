@@ -20,5 +20,14 @@
 ### Configure
 #### Create the runner and start the configuration experience
  ./config.sh --url https://github.com/sakthi909/vagrent_test --token AZDVAA45UMAD63P3OVK4A73CPUYH6
-#### Last step, run it!
+#### Run the Github runner
 $ ./run.sh
+
+### Turn off the Vagrent or VM if the CPU load is less than 1%
+
+In order to do this task, the author has suggesed to add the cpucheck.sh script inside the vagrent as cron
+1. vi /cpucheck.sh
+2. Addin in the content from github script
+3. chmod +x cpucheck.sh
+4. crontab -e
+5. 0 * * * * /cpucheck.sh 
